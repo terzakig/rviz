@@ -109,6 +109,8 @@ find_package(OpenGL REQUIRED)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+add_definitions(-DASSIMP_UNIFIED_HEADER_NAMES)
+    
 
 option(UseQt5 "UseQt5" ON)
 if (UseQt5)
